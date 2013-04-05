@@ -1,0 +1,45 @@
+2012-05-30 14:23:59,039 INFO classifying folder /home/hakondro/Dependency-Parser/data/out/. This may take a while
+2012-05-30 14:42:45,717 INFO classifying folder ../../pan11sample/. This may take a while
+2012-05-30 14:42:55,285 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:44:29,045 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:44:33,304 INFO classifying folder /home/hakondro/pan11sample. This may take a while
+2012-05-30 14:44:54,217 INFO classifying folder /home/hakondro/Dependency-Parser/data/out/. This may take a while
+2012-05-30 14:45:09,042 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:46:45,093 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:47:15,736 INFO classifying folder /home/hakondro/Dependency-Parser/data/out/. This may take a while
+2012-05-30 14:47:57,527 INFO classifying folder /home/hakondro/Dependency-Parser/data/out/. This may take a while
+2012-05-30 14:48:02,704 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:51:05,522 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:52:14,710 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:52:41,253 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:58:43,044 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 14:59:11,478 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 15:16:50,158 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 15:17:26,560 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 15:17:44,618 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 15:18:27,938 INFO classifying folder /home/hakondro/pan11sample/. This may take a while
+2012-05-30 15:32:22,024 INFO classifying folder /home/hakondro/pan11sample/.
+2012-05-30 15:36:26,215 INFO classifying folder /home/hakondro/pan11sample/.
+2012-05-30 15:44:19,292 INFO classifying folder /home/hakondro/pan11sample/.
+2012-05-30 15:48:52,473 INFO classifying folder /home/hakondro/pan11sample/.
+2012-05-30 16:27:30,702 INFO compared graphs /home/hakondro/pan11sample/source-documents/source-document00001.txt & /home/hakondro/pan11sample/source-documents/source-document00077.txt
+2012-05-30 16:27:30,703 INFO Distance 	 27.500000
+2012-05-30 16:27:30,703 INFO Execution time	 8.3715159893
+2012-05-31 14:27:10,679 INFO classifying folder /home/hakondro/Dependency-Parser/data/out/.
+2012-05-31 14:27:16,807 INFO classifying folder /home/hakondro/Dependency-Parser/data/out/.
+2012-05-31 14:29:52,329 INFO classifying folder /home/hakondro/Dependency-Parser/data/out/.
+2012-09-04 12:03:03,974 INFO classifying folder /home/hakondro/omglol/src/resources/iam-graph/Letter/MED/.
+2012-09-04 12:03:54,686 INFO classifying folder /home/hakondro/omglol/src/resources/iam-graph/Letter/MED/.
+2012-09-04 12:04:30,168 INFO Classification done
+2012-09-04 12:04:30,170 INFO correct: 	601 
+2012-09-04 12:04:30,171 INFO wrongs: 	148 
+2012-09-04 12:04:30,171 INFO accuracy: 	0.802403 
+2012-09-04 12:04:30,171 INFO wrongly classified instances: AP1_0138.gxl, VP1_0122.gxl, AP1_0126.gxl, HP1_0101.gxl, XP1_0143.gxl, AP1_0147.gxl, TP1_0109.gxl, FP1_0104.gxl, YP1_0133.gxl, KP1_0124.gxl, LP1_0149.gxl, AP1_0149.gxl, KP1_0130.gxl, AP1_0134.gxl, AP1_0103.gxl, FP1_0136.gxl, NP1_0112.gxl, KP1_0114.gxl, AP1_0102.gxl, TP1_0107.gxl, ZP1_0135.gxl, HP1_0116.gxl, YP1_0148.gxl, AP1_0118.gxl, HP1_0118.gxl, MP1_0118.gxl, NP1_0124.gxl, NP1_0104.gxl, AP1_0145.gxl, HP1_0131.gxl, EP1_0101.gxl, AP1_0142.gxl, AP1_0107.gxl, HP1_0102.gxl, AP1_0121.gxl, AP1_0148.gxl, AP1_0144.gxl, TP1_0123.gxl, LP1_0134.gxl, TP1_0146.gxl, AP1_0122.gxl, YP1_0138.gxl, TP1_0111.gxl, IP1_0128.gxl, HP1_0138.gxl, HP1_0109.gxl, TP1_0114.gxl, AP1_0141.gxl, YP1_0121.gxl, AP1_0127.gxl, YP1_0103.gxl, HP1_0112.gxl, YP1_0147.gxl, KP1_0142.gxl, HP1_0125.gxl, NP1_0102.gxl, AP1_0143.gxl, NP1_0113.gxl, AP1_0125.gxl, HP1_0140.gxl, NP1_0138.gxl, AP1_0108.gxl, WP1_0116.gxl, TP1_0121.gxl, VP1_0144.gxl, HP1_0142.gxl, WP1_0146.gxl, EP1_0142.gxl, YP1_0135.gxl, HP1_0123.gxl, FP1_0148.gxl, KP1_0121.gxl, HP1_0133.gxl, EP1_0144.gxl, AP1_0110.gxl, AP1_0139.gxl, IP1_0108.gxl, YP1_0109.gxl, NP1_0115.gxl, AP1_0131.gxl, FP1_0116.gxl, FP1_0146.gxl, NP1_0119.gxl, VP1_0102.gxl, AP1_0146.gxl, VP1_0103.gxl, IP1_0132.gxl, YP1_0108.gxl, AP1_0128.gxl, AP1_0113.gxl, KP1_0135.gxl, MP1_0114.gxl, NP1_0130.gxl, LP1_0106.gxl, YP1_0110.gxl, NP1_0107.gxl, YP1_0123.gxl, FP1_0126.gxl, NP1_0139.gxl, WP1_0141.gxl, FP1_0128.gxl, AP1_0137.gxl, HP1_0135.gxl, KP1_0149.gxl, VP1_0100.gxl, WP1_0148.gxl, MP1_0130.gxl, HP1_0114.gxl, KP1_0143.gxl, FP1_0102.gxl, HP1_0143.gxl, VP1_0109.gxl, VP1_0138.gxl, AP1_0112.gxl, ZP1_0121.gxl, HP1_0137.gxl, HP1_0134.gxl, AP1_0133.gxl, KP1_0109.gxl, TP1_0130.gxl, HP1_0106.gxl, HP1_0120.gxl, FP1_0101.gxl, HP1_0111.gxl, AP1_0100.gxl, AP1_0101.gxl, AP1_0135.gxl, AP1_0111.gxl, KP1_0125.gxl, EP1_0103.gxl, NP1_0133.gxl, FP1_0108.gxl, HP1_0115.gxl, MP1_0142.gxl, AP1_0104.gxl, AP1_0116.gxl, ZP1_0137.gxl, TP1_0112.gxl, MP1_0141.gxl, FP1_0135.gxl, AP1_0124.gxl, AP1_0114.gxl, AP1_0132.gxl, YP1_0107.gxl, HP1_0139.gxl, HP1_0129.gxl, HP1_0146.gxl, NP1_0110.gxl
+2012-09-04 12:04:30,172 INFO Execution time: 35.4873449802
+2012-09-04 12:05:06,887 INFO classifying folder /home/hakondro/omglol/src/resources/iam-graph/Letter/HIGH/.
+2012-09-04 12:06:05,181 INFO Classification done
+2012-09-04 12:06:05,182 INFO correct: 	543 
+2012-09-04 12:06:05,182 INFO wrongs: 	206 
+2012-09-04 12:06:05,182 INFO accuracy: 	0.724967 
+2012-09-04 12:06:05,182 INFO wrongly classified instances: KP1_0123.gxl, AP1_0138.gxl, YP1_0140.gxl, AP1_0147.gxl, MP1_0137.gxl, LP1_0105.gxl, TP1_0109.gxl, FP1_0104.gxl, EP1_0149.gxl, KP1_0124.gxl, KP1_0107.gxl, TP1_0132.gxl, TP1_0140.gxl, AP1_0149.gxl, XP1_0137.gxl, AP1_0106.gxl, MP1_0128.gxl, TP1_0103.gxl, WP1_0134.gxl, AP1_0103.gxl, FP1_0136.gxl, KP1_0140.gxl, NP1_0108.gxl, EP1_0102.gxl, HP1_0130.gxl, NP1_0112.gxl, LP1_0141.gxl, FP1_0131.gxl, NP1_0106.gxl, TP1_0107.gxl, HP1_0116.gxl, AP1_0118.gxl, VP1_0140.gxl, KP1_0104.gxl, WP1_0123.gxl, FP1_0109.gxl, YP1_0134.gxl, HP1_0131.gxl, AP1_0142.gxl, EP1_0120.gxl, YP1_0101.gxl, ZP1_0134.gxl, YP1_0124.gxl, YP1_0111.gxl, FP1_0142.gxl, YP1_0144.gxl, AP1_0121.gxl, AP1_0148.gxl, AP1_0144.gxl, NP1_0126.gxl, KP1_0118.gxl, ZP1_0123.gxl, TP1_0142.gxl, IP1_0100.gxl, LP1_0134.gxl, TP1_0149.gxl, HP1_0110.gxl, AP1_0122.gxl, AP1_0123.gxl, TP1_0111.gxl, HP1_0109.gxl, LP1_0120.gxl, NP1_0140.gxl, NP1_0143.gxl, XP1_0133.gxl, AP1_0141.gxl, YP1_0131.gxl, YP1_0103.gxl, HP1_0112.gxl, HP1_0119.gxl, TP1_0105.gxl, KP1_0147.gxl, HP1_0121.gxl, HP1_0103.gxl, HP1_0108.gxl, HP1_0125.gxl, AP1_0143.gxl, AP1_0125.gxl, WP1_0147.gxl, MP1_0119.gxl, LP1_0107.gxl, MP1_0127.gxl, HP1_0140.gxl, TP1_0121.gxl, XP1_0148.gxl, KP1_0100.gxl, WP1_0146.gxl, MP1_0140.gxl, KP1_0132.gxl, YP1_0118.gxl, NP1_0141.gxl, HP1_0123.gxl, HP1_0133.gxl, MP1_0148.gxl, WP1_0113.gxl, AP1_0110.gxl, IP1_0108.gxl, FP1_0113.gxl, YP1_0113.gxl, YP1_0109.gxl, NP1_0115.gxl, YP1_0115.gxl, TP1_0124.gxl, XP1_0108.gxl, XP1_0106.gxl, XP1_0140.gxl, HP1_0124.gxl, HP1_0117.gxl, ZP1_0141.gxl, AP1_0131.gxl, FP1_0106.gxl, FP1_0116.gxl, WP1_0117.gxl, YP1_0139.gxl, NP1_0119.gxl, LP1_0113.gxl, FP1_0125.gxl, TP1_0106.gxl, NP1_0149.gxl, LP1_0133.gxl, AP1_0146.gxl, VP1_0103.gxl, YP1_0106.gxl, AP1_0113.gxl, NP1_0147.gxl, NP1_0130.gxl, NP1_0111.gxl, TP1_0145.gxl, NP1_0107.gxl, KP1_0106.gxl, NP1_0145.gxl, XP1_0101.gxl, NP1_0139.gxl, XP1_0139.gxl, KP1_0115.gxl, ZP1_0128.gxl, WP1_0136.gxl, NP1_0142.gxl, XP1_0103.gxl, FP1_0145.gxl, AP1_0137.gxl, HP1_0135.gxl, ZP1_0125.gxl, FP1_0105.gxl, HP1_0144.gxl, NP1_0136.gxl, XP1_0114.gxl, XP1_0126.gxl, XP1_0102.gxl, WP1_0127.gxl, FP1_0110.gxl, EP1_0145.gxl, XP1_0120.gxl, KP1_0143.gxl, WP1_0137.gxl, LP1_0132.gxl, XP1_0113.gxl, FP1_0112.gxl, EP1_0147.gxl, VP1_0138.gxl, LP1_0125.gxl, HP1_0136.gxl, HP1_0145.gxl, MP1_0133.gxl, FP1_0130.gxl, LP1_0137.gxl, AP1_0112.gxl, VP1_0128.gxl, HP1_0127.gxl, HP1_0134.gxl, AP1_0133.gxl, KP1_0109.gxl, TP1_0113.gxl, TP1_0144.gxl, HP1_0120.gxl, FP1_0101.gxl, HP1_0111.gxl, KP1_0126.gxl, HP1_0113.gxl, AP1_0101.gxl, IP1_0106.gxl, XP1_0131.gxl, AP1_0111.gxl, NP1_0101.gxl, FP1_0108.gxl, WP1_0145.gxl, HP1_0122.gxl, MP1_0139.gxl, EP1_0111.gxl, KP1_0122.gxl, LP1_0130.gxl, TP1_0112.gxl, MP1_0141.gxl, WP1_0131.gxl, NP1_0146.gxl, FP1_0135.gxl, AP1_0124.gxl, KP1_0136.gxl, HP1_0141.gxl, LP1_0116.gxl, LP1_0143.gxl, YP1_0114.gxl, HP1_0146.gxl, EP1_0138.gxl, VP1_0129.gxl, ZP1_0144.gxl
+2012-09-04 12:06:05,183 INFO Execution time: 58.2968950272
