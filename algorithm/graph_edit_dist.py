@@ -5,14 +5,24 @@ from algorithm.edge_edit_dist import EdgeEditDistance
 import sys
 
 
+def compare(g1, g2, pos_weights, deprel_weights, print_details=False):
+    ged = GraphEditDistance(g1, g2, pos_weights, deprel_weights)
+
+    if print_details:
+        ged.print_matrix()
+
+    return ged.normalized_distance()
+
+
 class GraphEditDistance(AbstractGraphEditDistance):
 
-    def __init__(self, g1, g2, pos_weights):
+    def __init__(self, g1, g2, pos_weights, deprel_weights):
         AbstractGraphEditDistance.__init__(g1, g2)
         self.pos_weights = pos_weights
+        self.deprel_weights = deprel_weights
 
     def substitute_cost(self, node1, node2):
-        return self.relabel_cost(node1, node2) + edge_diff(node1, node2)
+        return self.relabel_cost(node1, node2) + self.edge_diff(node1, node2)
 
     def delete_cost(self, i, j):
         if i == j:
@@ -31,7 +41,6 @@ class GraphEditDistance(AbstractGraphEditDistance):
     def pos_insdel_weight(self, node):
         return self.pos_weights(node.pos)
 
-
-def edge_diff(node1, node2):
-    edit_edit_dist = EdgeEditDistance(node1.edges, node2.edges)
-    return edit_edit_dist.normalized_distance()
+    def edge_diff(self, node1, node2):
+        edit_edit_dist = EdgeEditDistance(node1.edges, node2.edges, self.deprel_weights)
+        return edit_edit_dist.normalized_distance()

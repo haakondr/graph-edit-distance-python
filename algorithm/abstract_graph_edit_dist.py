@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 
 from algorithm.munkres import Munkres
+import sys
 
 
 class AbstractGraphEditDistance():
@@ -50,7 +51,7 @@ class AbstractGraphEditDistance():
 
         for i in range(m):
             for j in range(m):
-                cost_matrix[i+n][ j ] = self.insert_cost(i, j)
+                cost_matrix[i+n][j] = self.insert_cost(i, j)
 
         for i in range(n):
             for j in range(n):
@@ -66,3 +67,13 @@ class AbstractGraphEditDistance():
 
     def substitute_cost(self, nodes1, nodes2):
         raise NotImplementedError
+
+    def print_matrix(self):
+        print "cost matrix:"
+        for column in self.matrix:
+            for row in column:
+                if row == sys.maxint:
+                    print "inf\t",
+                else:
+                    print "%.2f\t" % float(row),
+            print ""
