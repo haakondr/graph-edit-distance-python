@@ -7,9 +7,7 @@ import utils.json_utils as j
 
 
 def main(files, pos, deprel, print_details):
-    print deprel
-    print pos
-
+    raise NotImplementedError("mangler weight innlesning fra filer")
     result = g.compare(get_graphs(files), print_details)
     print "Normalized graph edit distance = %s" % result
 
