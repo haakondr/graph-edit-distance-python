@@ -4,7 +4,7 @@ from algorithm.munkres import Munkres
 import sys
 
 
-class AbstractGraphEditDistance():
+class AbstractGraphEditDistance(object):
     def __init__(self, g1, g2):
         self.g1 = g1
         self.g2 = g2
@@ -23,10 +23,11 @@ class AbstractGraphEditDistance():
 
     def edit_costs(self):
         m = Munkres()
-        index = m.compute(self.cost_matrix())
-        return [self.matrix[i][j] for i, j in index]
+        cost_matrix = self.create_cost_matrix()
+        index = m.compute(cost_matrix)
+        return [cost_matrix[i][j] for i, j in index]
 
-    def cost_matrix(self):
+    def create_cost_matrix(self):
         """
         Creates a |N+M| X |N+M| cost matrix between all nodes in
         graphs g1 and g2
@@ -40,23 +41,26 @@ class AbstractGraphEditDistance():
 
         The delete -> delete region is filled with zeros
         """
-        n = len(self.g1.nodes)
-        m = len(self.g2.nodes)
+        n = self.g1.size()
+        m = self.g2.size()
         cost_matrix = [[0 for i in range(n + m)] for j in range(n + m)]
+
+        nodes1 = self.g1.node_list()
+        nodes2 = self.g2.node_list()
 
         for i in range(n):
             for j in range(m):
-                cost_matrix[i][j] = self.substitute_cost(self.g1.nodes[i],
-                                                         self.g2.nodes[j])
+                cost_matrix[i][j] = self.substitute_cost(nodes1[i], nodes2[j])
 
         for i in range(m):
             for j in range(m):
-                cost_matrix[i+n][j] = self.insert_cost(i, j)
+                cost_matrix[i+n][j] = self.insert_cost(i, j, nodes2)
 
         for i in range(n):
             for j in range(n):
-                cost_matrix[j][i+m] = self.delete_cost(i, j)
+                cost_matrix[j][i+m] = self.delete_cost(i, j, nodes1)
 
+        self.cost_matrix = cost_matrix
         return cost_matrix
 
     def insert_cost(self, i, j):
@@ -70,7 +74,7 @@ class AbstractGraphEditDistance():
 
     def print_matrix(self):
         print "cost matrix:"
-        for column in self.matrix:
+        for column in self.create_cost_matrix():
             for row in column:
                 if row == sys.maxint:
                     print "inf\t",

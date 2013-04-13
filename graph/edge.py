@@ -6,7 +6,7 @@ class Edge():
     def __init__(self, start, end, deprel):
         self.start = start
         self.end = end
-        self.deprel
+        self.deprel = deprel
 
     def __repr__(self):
         return self.deprel
@@ -18,5 +18,7 @@ class Edge():
         return self.deprel == other.deprel
 
 
-def create_from(json_node):
-    return Edge(json_node['id'], json_node['rel'], json_node['deprel'])
+def create_from(json_node, graph):
+    start = graph.node(json_node['id'])
+    end = graph.node(json_node['rel'])
+    return Edge(start, end, json_node['deprel'])

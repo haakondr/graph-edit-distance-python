@@ -26,7 +26,7 @@ if __name__ == "__main__":
     parser.add_argument('files', nargs='*', type=str,
                         help='Calculates the graph edit distance between \
                         the two given graphs')
-    parser.add_argument('-ew, --edit_weights', type=str,
+    parser.add_argument('-ew', '--edit_weights', type=str,
                         default="resources/edit_weights.json",
                         help="Points to edit weight costs \
                         json filet")

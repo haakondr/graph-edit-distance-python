@@ -10,17 +10,17 @@ class EdgeEditDistance(AbstractGraphEditDistance):
     """
 
     def __init__(self, g1, g2, deprel_weights):
-        AbstractGraphEditDistance.__init__(g1, g2)
+        AbstractGraphEditDistance.__init__(self, g1, g2)
         self.deprel_weights = deprel_weights
 
-    def insert_cost(self, i, j):
+    def insert_cost(self, i, j, nodes2):
         if i == j:
-            return self.deprel_insdel_weight(self.g2.nodes[j])
+            return self.deprel_insdel_weight(nodes2[j])
         return sys.maxint
 
-    def delete_cost(self, i, j):
+    def delete_cost(self, i, j, nodes1):
         if i == j:
-            return self.deprel_insdel_weight(self.g1.nodes[i])
+            return self.deprel_insdel_weight(nodes1[i])
         return sys.maxint
 
     def substitute_cost(self, edge1, edge2):
@@ -29,7 +29,7 @@ class EdgeEditDistance(AbstractGraphEditDistance):
         return self.deprel_sub_weight(edge1, edge2)
 
     def deprel_sub_weight(self, edge1, edge2):
-        return self.deprel_weights(edge1.deprel+"-"+edge2.deprel)
+        return self.deprel_weights[edge1.deprel+"-"+edge2.deprel]
 
     def deprel_insdel_weight(self, edge):
-        return self.deprel_weights(edge.deprel)
+        return self.deprel_weights[edge.deprel]
