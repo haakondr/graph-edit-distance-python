@@ -26,17 +26,26 @@ class GraphEditDistance(AbstractGraphEditDistance):
 
     def delete_cost(self, i, j):
         if i == j:
-            return self.pos_insdel_weight(self.g1.node[i])
+            try:
+                return self.pos_weights[self.g1.node[i]['pos']]
+            except KeyError:
+                return 1.
         return sys.maxint
 
     def insert_cost(self, i, j):
         if i == j:
-            return self.pos_insdel_weight(self.g2.node[j])
+            try:
+                return self.pos_weights[self.g2.node[j]['pos']]
+            except KeyError:
+                return 1.
         else:
             return sys.maxint
 
     def pos_sub_weight(self, node1, node2):
-        return self.pos_weights[node1.pos+"-"+node2.pos]
+        try:
+            return self.pos_weights[node1.pos+"-"+node2.pos]
+        except KeyError:
+            return 1.
 
     def pos_insdel_weight(self, node):
         return self.pos_weights(node.pos)

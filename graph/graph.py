@@ -30,7 +30,7 @@ class Graph():
         return self.nodes[node_id]
 
 
-def create_from(json_graph):
+def create_from(json_graph, sel_node_attrs):
     import json
     import node
     import edge
@@ -44,7 +44,7 @@ def create_from(json_graph):
         int(data['length']))
 
     for token in data['tokens']:
-        graph.add_node(node.create_from(token))
+        graph.add_node(node.create_from(token, sel_node_attrs))
         graph.add_edge(edge.create_from(token))
 
     return graph

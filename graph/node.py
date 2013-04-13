@@ -35,5 +35,6 @@ class Node():
         return len(self.attributes) / float(diff)
 
 
-def create_from(json_node):
-    return Node(json_node['id'], json_node)
+def create_from(json_node, selected_attrs):
+    attr = [(k, json_node[k]) for k in selected_attrs if k in json_node]
+    return Node(json_node['id'], attr)
